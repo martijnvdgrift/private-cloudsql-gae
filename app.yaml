@@ -1,0 +1,13 @@
+runtime: nodejs14
+ 
+vpc_access_connector:
+# Format: projects/YOUR_PROJECT_NAME/locations/YOUR_REGION/connectors/YOUR_VPC_CONNECTOR_NAME
+ name: # FILL_IN_YOUR_CONNECTOR_NAME
+ egress_setting: all-traffic
+
+env_variables:
+  PGHOST: # FILL_IN_YOUR_CLOUD_SQL_PRIVATE_IP
+  PGUSER: postgres
+  PGDATABASE: # FILL_IN_YOUR_DB_NAME
+  PGPASSWORD: # FILL_IN_YOUR_PASSWORD
+  PGPORT: 5432
